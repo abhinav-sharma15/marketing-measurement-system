@@ -329,4 +329,221 @@ The best marketing measurement systems combine:
 * models (for scalability)
 * judgment (for decision-making)
 
+  ## 10. Designing a Good Experiment
+
+A good experiment is not just statistically correct.
+
+It must also be:
+
+* operationally feasible
+* interpretable by stakeholders
+* robust to real-world noise and bias
+
+Most failed experiments are not caused by bad analysis.
+They fail because the design was flawed from the beginning.
+
+---
+
+## 11. Step 1 — Define the Business Question
+
+The experiment should start with a clear decision problem.
+
+Bad question:
+
+* “Is this campaign performing well?”
+
+Better question:
+
+* “Does this campaign generate incremental conversions compared to no exposure?”
+
+Best question:
+
+* “Is this the best use of marginal marketing budget?”
+
+A strong experiment is tied directly to a business decision.
+
+---
+
+## 12. Step 2 — Define the Hypothesis
+
+The hypothesis should clearly specify:
+
+* treatment
+* expected impact
+* metric
+
+Example:
+
+> Retargeting increases conversion rate by at least 5% compared to no retargeting exposure.
+
+Weak hypotheses create ambiguous interpretation.
+
+---
+
+## 13. Step 3 — Choose the Primary Metric
+
+The primary metric should reflect actual business value.
+
+Examples:
+
+* conversion rate
+* revenue per user
+* pipeline generation
+* opportunity creation
+* closed-won revenue
+
+A common mistake:
+
+> optimizing for easy-to-measure metrics instead of meaningful outcomes.
+
+For example:
+
+* clicks are easier to measure than revenue
+* but may not reflect business impact
+
+---
+
+## 14. Step 4 — Define Treatment Precisely
+
+The treatment must be clearly specified.
+
+Questions to define:
+
+* What exactly changes?
+* What is turned on or off?
+* Who is eligible?
+* How long is exposure?
+
+Example:
+
+* treatment = users exposed to retargeting ads at frequency cap = 3/day
+
+Ambiguous treatment definitions create unreliable experiments.
+
+---
+
+## 15. Step 5 — Choose the Right Duration
+
+Experiments must run long enough to:
+
+* reduce noise
+* capture delayed effects
+* account for seasonality
+
+Short experiments can:
+
+* overreact to random fluctuations
+* miss long conversion cycles
+
+This is especially important in:
+
+* B2B funnels
+* high-consideration purchases
+
+---
+
+## 16. Step 6 — Sample Size and Statistical Power
+
+A test needs enough observations to detect meaningful effects.
+
+Low-volume tests create:
+
+* unstable estimates
+* false negatives
+* overinterpretation of noise
+
+Practical insight:
+
+> many marketing experiments fail because teams try to measure small effects with insufficient scale.
+
+---
+
+## 17. Step 7 — Define Success Before Launch
+
+Before starting the experiment, define:
+
+* success threshold
+* decision criteria
+* escalation plan
+
+Example:
+
+* if incremental lift < 2%, reduce spend
+* if lift > 8%, scale campaign
+
+Changing definitions after results appear introduces bias.
+
+---
+
+## 18. Real-World Constraints
+
+Perfect experiments rarely exist in production environments.
+
+Examples:
+
+* leadership may resist turning off spend
+* legal/privacy constraints may limit targeting
+* sales teams may interfere with account assignment
+* ad platforms may optimize delivery unevenly
+
+As a result:
+
+> experiment design is often a tradeoff between rigor and practicality.
+
+---
+
+## 19. Strong Opinion
+
+Many marketing teams focus heavily on statistical significance while ignoring experimental validity.
+
+A statistically significant result from a poorly designed experiment is still unreliable.
+
+Design quality matters more than model complexity.
+
+---
+
+## 20. Practical Example
+
+### Scenario
+
+A company wants to evaluate whether YouTube advertising drives incremental pipeline.
+
+### Poor Design
+
+* compare exposed vs non-exposed users directly
+* no randomization
+* no holdout
+
+Result:
+
+* heavily biased toward users already interested in the product
+
+### Better Design
+
+* geo-level holdout experiment
+* matched regions
+* pre/post analysis
+* pipeline value as primary KPI
+
+This creates a more credible estimate of incremental impact.
+
+---
+
+## 21. Key Takeaway
+
+A good experiment is not defined by sophistication.
+
+It is defined by:
+
+* credibility
+* clarity
+* alignment with decision-making
+
+The best experiments:
+
+* reduce bias
+* answer a real business question
+* lead to actionable decisions
+
+
 
