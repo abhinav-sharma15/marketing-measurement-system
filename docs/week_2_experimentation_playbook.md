@@ -545,5 +545,308 @@ The best experiments:
 * answer a real business question
 * lead to actionable decisions
 
+## 22. Common Failure Modes in Marketing Experiments
+
+Most failed marketing experiments do not fail because of statistics.
+
+They fail because:
+
+* treatment and control are not truly isolated
+* exposure is inconsistent
+* platform behavior introduces hidden bias
+* the experiment does not reflect real-world behavior
+
+Understanding failure modes is critical for interpreting results correctly.
+
+---
+
+## 23. Contamination
+
+### Definition
+
+Contamination occurs when control units are indirectly exposed to the treatment.
+
+This weakens the difference between treatment and control groups.
+
+---
+
+### Marketing Example
+
+A geo experiment:
+
+* London = treatment
+* Birmingham = control
+
+However:
+
+* users travel between regions
+* media spillover occurs
+* users see ads across devices
+
+As a result:
+
+* control users are partially exposed to treatment
+
+---
+
+### Impact
+
+* measured lift is diluted
+* incremental impact is underestimated
+
+---
+
+### Mitigation
+
+* choose well-separated geographies
+* reduce audience overlap
+* use larger randomization units where appropriate
+
+---
+
+## 24. Spillover Effects
+
+### Definition
+
+The treatment affects users outside the treatment group.
+
+---
+
+### Marketing Example
+
+A YouTube campaign:
+
+* increases brand awareness nationally
+* even users in control regions search for the brand later
+
+---
+
+### Impact
+
+* control group behavior changes
+* experiment underestimates true impact
+
+---
+
+### Important Insight
+
+Upper-funnel channels often create spillover effects that are difficult to isolate cleanly.
+
+This is one reason:
+
+> brand and video measurement are inherently harder than lower-funnel measurement.
+
+---
+
+## 25. Platform Optimization Bias
+
+### Definition
+
+Ad platforms dynamically optimize delivery toward users most likely to convert.
+
+This means:
+
+* treatment exposure is not always stable or random over time
+
+---
+
+### Marketing Example
+
+A platform algorithm:
+
+* gradually shifts impressions toward higher-intent users
+* improves reported performance during the test
+
+---
+
+### Impact
+
+* measured lift may reflect optimization bias
+* not true causal impact
+
+---
+
+### Strong Opinion
+
+Platform optimization is one of the most under-discussed sources of bias in digital experimentation.
+
+Many teams assume:
+
+* exposure is fixed
+  when in reality:
+* delivery systems continuously adapt.
+
+---
+
+## 26. Wrong Unit of Randomization
+
+### Definition
+
+The experiment randomizes at a level that does not match exposure behavior.
+
+---
+
+### Marketing Example
+
+* ads are targeted regionally
+* but randomization occurs at user level
+
+Users in treatment and control:
+
+* still experience shared media exposure
+
+---
+
+### Impact
+
+* groups are not truly independent
+* causal interpretation becomes unreliable
+
+---
+
+### Key Insight
+
+Choosing the wrong unit of randomization can invalidate an otherwise well-designed experiment.
+
+---
+
+## 27. Short Experiment Duration
+
+### Definition
+
+The test ends before the full impact can be observed.
+
+---
+
+### Marketing Example
+
+B2B campaign measurement:
+
+* experiment runs for 7 days
+* pipeline closes 60–90 days later
+
+---
+
+### Impact
+
+* delayed conversions are missed
+* upper-funnel impact appears weaker than reality
+
+---
+
+### Practical Insight
+
+Short-term experiments often favor:
+
+* demand capture channels
+  while undervaluing:
+* long-term demand creation.
+
+---
+
+## 28. Metric Misalignment
+
+### Definition
+
+The experiment optimizes for a metric that does not reflect business value.
+
+---
+
+### Marketing Example
+
+Optimizing:
+
+* click-through rate (CTR)
+
+Instead of:
+
+* revenue
+* pipeline quality
+* LTV
+
+---
+
+### Impact
+
+* channels that generate cheap engagement are overvalued
+* business outcomes are ignored
+
+---
+
+## 29. Stakeholder-Induced Bias
+
+### Definition
+
+Business teams interfere with the experiment due to performance concerns.
+
+---
+
+### Marketing Example
+
+Midway through a holdout:
+
+* marketing teams increase spend
+* sales teams prioritize treatment accounts
+* campaign settings are changed
+
+---
+
+### Impact
+
+* experiment integrity breaks
+* treatment effect becomes uninterpretable
+
+---
+
+### Real-World Insight
+
+Many experiments fail organizationally before they fail statistically.
+
+---
+
+## 30. Survivorship and Reporting Bias
+
+### Definition
+
+Only successful outcomes are analyzed or communicated.
+
+---
+
+### Marketing Example
+
+Teams highlight:
+
+* positive lift tests
+
+But ignore:
+
+* inconclusive or negative experiments
+
+---
+
+### Impact
+
+* distorted learning culture
+* false confidence in channels
+
+---
+
+## 31. Key Takeaway
+
+A statistically significant result does not guarantee a trustworthy experiment.
+
+The credibility of an experiment depends on:
+
+* isolation
+* stability
+* correct randomization
+* realistic measurement windows
+* organizational discipline
+
+The best marketing scientists are not just good at analysis.
+
+They are good at identifying:
+
+> why an experiment may be wrong.
 
 
