@@ -849,4 +849,317 @@ They are good at identifying:
 
 > why an experiment may be wrong.
 
+## 32. Real-World Experiment Designs
+
+The goal of experimentation is not simply to measure lift.
+
+It is to generate credible evidence that supports business decisions under real-world constraints.
+
+Below are three common marketing experiment scenarios and their recommended designs.
+
+---
+
+# Experiment 1 — Paid Social Incrementality Test
+
+## Business Question
+
+Does paid social generate incremental pipeline and revenue, or primarily capture users already likely to convert?
+
+---
+
+## Recommended Design
+
+### Experiment Type
+
+Geo-level holdout test
+
+### Treatment
+
+Paid social campaigns active in selected regions
+
+### Control
+
+Paid social significantly reduced or paused in matched regions
+
+---
+
+## Why Geo-Level?
+
+User-level randomization is difficult because:
+
+* users are exposed across devices
+* platform identity is imperfect
+* contamination risk is high
+
+Geo-level randomization creates cleaner separation.
+
+---
+
+## Primary KPI
+
+* incremental pipeline
+* revenue per region
+* opportunity creation
+
+Avoid optimizing only for:
+
+* clicks
+* CTR
+* leads
+
+---
+
+## Key Risks
+
+* regional demand differences
+* spillover between nearby geographies
+* platform delivery optimization
+
+---
+
+## Practical Insight
+
+Paid social often appears stronger in attribution than in incrementality tests because:
+
+* exposure is correlated with user intent
+* attribution over-credits assisted conversions
+
+---
+
+## Strong Opinion
+
+Many paid social dashboards measure engagement efficiency, not business impact.
+
+---
+
+# Experiment 2 — Branded Search Incrementality Test
+
+## Business Question
+
+Does branded paid search create incremental conversions, or mainly capture existing demand?
+
+---
+
+## Recommended Design
+
+### Experiment Type
+
+Geo-based reduction test
+
+### Treatment
+
+Branded search ads remain active
+
+### Control
+
+Branded search spend reduced or paused in selected geographies
+
+---
+
+## Why Not Full Shutdown?
+
+Completely turning off branded search:
+
+* may create revenue risk
+* may allow competitors to dominate branded queries
+* is often operationally unacceptable
+
+As a result:
+
+> partial reduction tests are often more realistic than full holdouts.
+
+---
+
+## Primary KPI
+
+* total conversions
+* revenue
+* organic substitution effects
+
+---
+
+## Key Risks
+
+* users switching to organic search
+* competitor bidding changes
+* spillover across regions
+
+---
+
+## Important Insight
+
+A decline in paid conversions does not necessarily mean:
+
+* total business impact declined
+
+Users may simply convert through another path.
+
+---
+
+## Strong Opinion
+
+Branded search is often strategically valuable but causally overstated.
+
+---
+
+# Experiment 3 — Email Holdout Test
+
+## Business Question
+
+Does a lifecycle email campaign meaningfully change user behavior?
+
+---
+
+## Recommended Design
+
+### Experiment Type
+
+User-level randomized holdout
+
+### Treatment
+
+Users receive lifecycle email
+
+### Control
+
+Users are excluded from the email campaign
+
+---
+
+## Why User-Level Works Here
+
+* exposure is directly controlled
+* contamination risk is lower
+* randomization is easier to enforce
+
+---
+
+## Primary KPI
+
+* conversion rate
+* engagement rate
+* downstream revenue
+
+---
+
+## Key Risks
+
+* short measurement windows
+* users receiving similar messaging elsewhere
+* over-optimizing open rates instead of business outcomes
+
+---
+
+## Practical Insight
+
+Email experiments are often technically easier than paid media experiments, but:
+
+* teams frequently optimize for engagement metrics rather than incremental business value.
+
+---
+
+# Experiment 4 — B2B Account-Based Marketing (ABM) Test
+
+## Business Question
+
+Does account-based advertising increase pipeline creation for target accounts?
+
+---
+
+## Recommended Design
+
+### Experiment Type
+
+Account-level randomized experiment
+
+### Treatment
+
+Target accounts receive ABM campaigns and sales outreach
+
+### Control
+
+Matched accounts excluded from campaign exposure
+
+---
+
+## Why Account-Level Randomization?
+
+In B2B:
+
+* multiple stakeholders exist within one company
+* users influence each other internally
+* exposure occurs across channels and sales interactions
+
+User-level randomization creates contamination.
+
+---
+
+## Primary KPI
+
+* pipeline creation
+* opportunity progression
+* closed-won revenue
+
+---
+
+## Key Risks
+
+* long sales cycles
+* sales team interference
+* uneven account engagement
+
+---
+
+## Critical B2B Insight
+
+Short-term experiments often underestimate ABM impact because:
+
+* revenue realization may take months after exposure.
+
+---
+
+# 33. Comparing Experiment Types
+
+| Experiment Type    | Best For              | Main Advantage                  | Main Risk           |
+| ------------------ | --------------------- | ------------------------------- | ------------------- |
+| User-Level A/B     | Email, lifecycle      | Precision                       | Contamination       |
+| Geo Test           | Paid media, brand     | Better isolation                | Lower power         |
+| Holdout Test       | Incrementality        | Direct causal estimate          | Revenue risk        |
+| Platform Lift Test | Large-scale campaigns | Easy deployment                 | Black-box bias      |
+| Account-Level Test | B2B / ABM             | Better organizational isolation | Long feedback loops |
+
+---
+
+# 34. Organizational Reality
+
+In practice, the biggest barriers to experimentation are often organizational rather than technical.
+
+Examples:
+
+* channel owners protecting reported ROI
+* leadership resisting revenue risk
+* pressure to declare success quickly
+* inconsistent KPI definitions across teams
+
+As a result:
+
+> building trust in experimentation is as important as designing the experiment itself.
+
+---
+
+# 35. Key Takeaway
+
+Good experimentation requires:
+
+* strong causal reasoning
+* operational realism
+* stakeholder alignment
+
+The best marketing scientists do not just run experiments.
+
+They design systems that:
+
+* produce credible evidence
+* survive organizational pressure
+* improve decision quality over time.
 
